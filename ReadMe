@@ -1,0 +1,20 @@
+This project will instruct you how to create an EC2 instance with its own VPC, SNS topic, network gateway, elastic IP, variables, Outputs, S3 bucket and Security groups.
+First I would like to start by setting up AWS Vault, this will help you hide your secret keys that you have generated from your AWS IAM portal and when you upload your code to GitHub repositories you will not be uploading your secret keys. This process is very easy to set and extremely secure. You can Google how to install a AWS Vault on your operating system.
+Here is a good example on how to set up aws-vault
+	https://github.com/99designs/aws-vault
+
+
+Then go to Terminal or CMD and use these commands.
+	aws-vault add (your profile name goes here) Example:Johns-dev
+	Enter Access Key Id: *****************
+	Enter Secret Key:*****************
+	
+When you are ready to compile your code with terraform use the commands below.
+
+	aws-vault exec (your profile name goes here)-- terraform init
+	aws-vault exec (your profile name goes here)-- terraform validate
+	aws-vault exec (your profile name goes here)-- terraform plan
+	aws-vault exec (your profile name goes here)-- terraform apply 
+	
+I have left plenty of comments within my code so it's pretty much self-explanatory. Feel free to add your own spice to the code and I hope this helps you.
+	
