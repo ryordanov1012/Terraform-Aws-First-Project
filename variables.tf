@@ -22,7 +22,7 @@ variable "private-subnet-cidr" {
 
 
 variable "ssh-location" {
-  default = "76.193.47.58/32"
+  default = "YourIPGoesHere/32"
   description = "Allow only from my IP"
   type = string 
 }
