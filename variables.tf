@@ -1,4 +1,4 @@
-# Define variables and use them as needed in your code
+e# Define variables and use them as needed in your code
 variable "ec2_instance_type" {
   type = string
   default = "t2.micro"
@@ -29,7 +29,7 @@ variable "ssh-location" {
 
 
 variable "endpoint-email" {
-  default = "Roseneyordanov@gmail.com"
+  default = "EMAIL@gmail.com"
   description = "sns topic subscription variable"
   type = string
 }
