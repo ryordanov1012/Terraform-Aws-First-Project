@@ -1,6 +1,6 @@
 #Create Bucket
 resource "aws_s3_bucket" "TestSubject" {
-  bucket = "my-cameronarc-5456"
+  bucket = "my-something-1045"
   #Bucket names can consist only of lowercase letters, numbers, dots (.), and hyphens (-).
   
 }
